@@ -15,19 +15,19 @@ export default function Navbar() {
       <ul className="hidden md:flex space-x-6">
         <li>
           <a href="/"
-             className="text-gray-700 transition">
+              className="text-gray-700 transition">
             Accueil
           </a>
         </li>
         <li>
           <a href="/concept"
-             className="text-gray-700 transition">
+              className="text-gray-700 transition">
             Concept
           </a>
         </li>
         <li>
           <a href="#"
-             className="text-gray-700 transition">
+              className="text-gray-700 transition">
             Contact
           </a>
         </li>
@@ -55,8 +55,8 @@ export default function Navbar() {
       >
         <li className="w-full text-center">
           <a
-            href="#"
-            className="block py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 transition w-full"
+            href="/"
+            className="block py-2 text-black hover:bg-gray-100 transition w-full"
             onClick={() => setMenuOpen(false)}
           >
             Accueil
@@ -65,7 +65,7 @@ export default function Navbar() {
         <li className="w-full text-center">
           <a
             href="/concept"
-            className="block py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 transition w-full"
+            className="block py-2 text-black hover:bg-gray-100 transition w-full"
             onClick={() => setMenuOpen(false)}
           >
             Concept
@@ -74,7 +74,7 @@ export default function Navbar() {
         <li className="w-full text-center">
           <a
             href="#"
-            className="block py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 transition w-full"
+            className="block py-2 text-black hover:bg-gray-100 transition w-full"
             onClick={() => setMenuOpen(false)}
           >
             Contact
