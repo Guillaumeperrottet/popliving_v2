@@ -26,6 +26,12 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <a href="/situation"
+              className="text-gray-700 transition">
+            Situation
+          </a>
+        </li>
+        <li>
           <a href="#"
               className="text-gray-700 transition">
             Contact
@@ -69,6 +75,12 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             Concept
+          </a>
+        </li>
+        <li>
+          <a href="/situation"
+              className="text-gray-700 transition">
+            Situation
           </a>
         </li>
         <li className="w-full text-center">
