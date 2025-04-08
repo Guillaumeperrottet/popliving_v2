@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import SubtitleChanger from '@/components/SubtitleChanger';
 import Card from '@/components/Card';
 
 export default function Concept() {
@@ -9,13 +10,11 @@ export default function Concept() {
     <>
       <Navbar />
       <main className="mt-20">
-        <section
-          className="bg-cover bg-center h-[60vh] relative"
-          style={{ backgroundImage: 'url(/images/concept-header.jpg)' }}>
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-            <h1 className="text-white text-5xl font-bold">Le Concept Popliving</h1>
-          </div>
-        </section>
+      <section className="relative h-[60vh] bg-gradient-to-r from-orange-500 to-white flex flex-col items-center justify-center text-center">
+        <h1 className="text-white text-5xl font-bold">Découvrez notre concept</h1>
+        <SubtitleChanger subtitles={["Vivez différement", "Simplifiez votre quotidien", "Partagez des espaces uniques"]} />
+    </section>
+
 
         <section className="container mx-auto px-8 py-16">
           <h2 className="text-3xl font-bold mb-8">Un logement flexible et adapté à vos besoins</h2>
