@@ -40,6 +40,8 @@
     }
   },
   "booking": {
+    "thank_you_title": "Vielen Dank für Ihre Anfrage",
+    "thank_you_message": "Wir werden uns innerhalb von 3 Werktagen bei Ihnen melden.",
     "request_availability": "Verfügbarkeitsanfrage",
     "correct_errors": "Bitte korrigieren Sie die folgenden Fehler:",
     "choose_room": "Wählen Sie ein Zimmer",
@@ -160,5 +162,8 @@
   },
   "situation": {
     "description": "Gelegen in Riaz, im Herzen von Gruyère, genießt dieses Gebäude eine ideale Lage. In der Nähe finden Sie Geschäfte und öffentliche Verkehrsmittel, die das Reisen in der Region erleichtern."
+  },
+  "common": {
+    "back_to_home": "Zurück zur Startseite"
   }
 }

@@ -4,9 +4,13 @@ import Navbar from '@/components/Navbar';
 import { useState } from "react";
 import { useTranslation } from '@/app/i18n/client';
 import { Toaster, toast } from 'react-hot-toast';
+import { useRouter } from 'next/navigation'; // Ajout du router
+
 
 export default function Booking() {
   const { t } = useTranslation();
+  const router = useRouter(); // Initialisation du router
+
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -41,13 +45,8 @@ export default function Booking() {
       });
 
       if (response.ok) {
-        const result = await response.json();
-        console.log(result.message);
-        // Instead of alert:
-        toast.success(t('booking.success'), {
-          duration: 5000,
-          position: 'top-center',
-        });
+        // Redirection vers la page de confirmation au lieu d'afficher un toast
+        router.push('/booking/thank-you');
       } else {
         console.error(t('booking.error_log'));
         toast.error(t('booking.failure'));
@@ -156,6 +155,7 @@ export default function Booking() {
           <button
             type="submit"
             className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded transition-colors duration-300"
+            style={{ cursor: 'pointer' }}
           >
             {t("booking.submit")}
           </button>
@@ -165,7 +165,7 @@ export default function Booking() {
         toastOptions={{
           success: {
             style: {
-              background: 'orange',
+              background: 'white',
             },
           },
           error: {
