@@ -1,8 +1,18 @@
+// Import de la variable "dev" qui indique si on est en mode développement
+import { dev } from '$app/environment';
+
+// Import de la fonction injectAnalytics depuis le package
+import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+// Injection du script d'analytics (mode: 'development' ou 'production')
+injectAnalytics({ mode: dev ? 'development' : 'production' });
+
 import { Inter } from 'next/font/google'
 import { getDictionary } from '../i18n/server'
 import { I18nProvider } from '../i18n/client'
 import { locales } from '../i18n/settings'
 import '../../styles/globals.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 const defaultLanguage = 'fr';
