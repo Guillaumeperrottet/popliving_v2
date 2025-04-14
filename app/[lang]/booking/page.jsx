@@ -19,11 +19,6 @@ export default function Booking() {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -39,14 +34,18 @@ export default function Booking() {
       if (response.ok) {
         const result = await response.json();
         console.log(result.message);
-        alert(t('booking.success'));
+        // Instead of alert:
+        toast.success(t('booking.success'), {
+          duration: 5000,
+          position: 'top-center',
+        });
       } else {
         console.error(t('booking.error_log'));
-        alert(t('booking.error'));
+        toast.error(t('booking.failure'));
       }
     } catch (error) {
-      console.error('Network error:', error);
-      alert(t('booking.network_error'));
+      console.error('Error:', error);
+      toast.error(t('booking.failure'));
     }
   };
 
