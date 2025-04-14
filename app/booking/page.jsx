@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Navbar from '@/components/Navbar';
+import { useState } from "react";
 
 
 export default function Booking() {
@@ -11,7 +11,9 @@ export default function Booking() {
     email: "",
     phone: "",
     arrivalDate: "",
+    chooseRoom: "chambre simple",
     stayDuration: "1 semaine",
+    adresse: "",
     message: "",
   });
 

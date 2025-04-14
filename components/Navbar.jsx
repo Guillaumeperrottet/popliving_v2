@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 import { useState } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'; // Import v2
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +50,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="focus:outline-none text-gray-700"
+          aria-label="Menu"
         >
           {menuOpen ? (
             <XMarkIcon className="h-6 w-6" />
@@ -60,48 +61,55 @@ export default function Navbar() {
       </div>
 
       {/* Menu mobile */}
-      <ul
-        className={`absolute left-0 w-full bg-white md:hidden flex flex-col items-center space-y-4 py-4 transition-all duration-300 ease-in-out
-          ${menuOpen ? 'top-16 opacity-100' : 'top-[-200px] opacity-0'}
-        `}
-      >
-        <li className="w-full text-center">
-          <a
-            href="/"
-            className="block py-2 text-black hover:bg-gray-100 transition w-full"
-            onClick={() => setMenuOpen(false)}
-          >
-            Accueil
-          </a>
-        </li>
-        <li className="w-full text-center">
-          <a
-            href="/concept"
-            className="block py-2 text-black hover:bg-gray-100 transition w-full"
-            onClick={() => setMenuOpen(false)}
-          >
-            Concept
-          </a>
-        </li>
-        <li>
-          <a href="/situation"
-              className="text-gray-700 transition">
-            Situation
-          </a>
-        </li>
-        <li>
-          <a href="/faq"
-              className="text-gray-700 transition">
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a href="/booking"
-              className="text-gray-700 transition">
-            Demande de disponibilité
-          </a>
-        </li>
-      </ul>
+      {menuOpen && (
+        <ul className="absolute top-16 left-0 w-full bg-white md:hidden flex flex-col items-center space-y-4 py-4 shadow-md z-40">
+          <li className="w-full text-center">
+            <a
+              href="/"
+              className="block py-2 text-black hover:bg-gray-100 transition w-full"
+              onClick={() => setMenuOpen(false)}
+            >
+              Accueil
+            </a>
+          </li>
+          <li className="w-full text-center">
+            <a
+              href="/concept"
+              className="block py-2 text-black hover:bg-gray-100 transition w-full"
+              onClick={() => setMenuOpen(false)}
+            >
+              Concept
+            </a>
+          </li>
+          <li className="w-full text-center">
+            <a
+              href="/situation"
+              className="block py-2 text-black hover:bg-gray-100 transition w-full"
+              onClick={() => setMenuOpen(false)}
+            >
+              Situation
+            </a>
+          </li>
+          <li className="w-full text-center">
+            <a
+              href="/faq"
+              className="block py-2 text-black hover:bg-gray-100 transition w-full"
+              onClick={() => setMenuOpen(false)}
+            >
+              FAQ
+            </a>
+          </li>
+          <li className="w-full text-center">
+            <a
+              href="/booking"
+              className="block py-2 text-black hover:bg-gray-100 transition w-full"
+              onClick={() => setMenuOpen(false)}
+            >
+              Demande de disponibilité
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 }
