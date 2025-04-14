@@ -3,6 +3,7 @@
 import Navbar from '@/components/Navbar';
 import { useState } from "react";
 import { useTranslation } from '@/app/i18n/client';
+import { Toaster, toast } from 'react-hot-toast';
 
 export default function Booking() {
   const { t } = useTranslation();
@@ -18,6 +19,14 @@ export default function Booking() {
     adresse: "",
     message: "",
   });
+
+  // Ajout de la fonction handleChange pour mettre à jour l'état du formulaire
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -152,6 +161,7 @@ export default function Booking() {
           </button>
         </form>
       </main>
+      <Toaster />
     </>
   );
 }
