@@ -164,6 +164,7 @@
     "description": "Gelegen in Riaz, im Herzen von Gruyère, genießt dieses Gebäude eine ideale Lage. In der Nähe finden Sie Geschäfte und öffentliche Verkehrsmittel, die das Reisen in der Region erleichtern."
   },
   "common": {
-    "back_to_home": "Zurück zur Startseite"
+    "back_to_home": "Zurück zur Startseite",
+    "redirect_message": "Sie werden in {{seconds}} Sekunden weitergeleitet."
   }
 }

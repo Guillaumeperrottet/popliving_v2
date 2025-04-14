@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation'; // Ajout du router
 
 
 export default function Booking() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const router = useRouter(); // Initialisation du router
 
 
@@ -46,7 +46,7 @@ export default function Booking() {
 
       if (response.ok) {
         // Redirection vers la page de confirmation au lieu d'afficher un toast
-        router.push('/booking/thank-you');
+        router.push(`/${lang}/thanks`);
       } else {
         console.error(t('booking.error_log'));
         toast.error(t('booking.failure'));

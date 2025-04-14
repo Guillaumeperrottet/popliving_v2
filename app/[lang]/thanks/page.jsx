@@ -3,9 +3,26 @@
 import { useTranslation } from '@/app/i18n/client';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'; // Import du router
+import { useEffect, useState } from 'react'; // Import des hooks
 
 export default function ThankYouPage() {
   const { t } = useTranslation();
+  const router = useRouter();
+  const [countdown, setCountdown] = useState(10); // Initialisation du compte à rebours à 10 secondes
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown((prev) => prev - 1); // Réduction du compte à rebours
+    }, 1000);
+
+    // Redirection après 10 secondes
+    if (countdown === 0) {
+      router.push('/'); // Redirige vers la page d'accueil
+    }
+
+    return () => clearInterval(timer); // Nettoyage du timer
+  }, [countdown, router]);
 
   return (
     <>
@@ -22,6 +39,9 @@ export default function ThankYouPage() {
           <h1 className="text-3xl font-bold mb-6 text-gray-900">{t('booking.thank_you_title')}</h1>
           <p className="text-xl mb-8 text-gray-600">
             {t('booking.thank_you_message')}
+          </p>
+          <p className="text-gray-500 mb-8">
+            {`${t('common.redirect_message').replace('{{seconds}}', countdown)}`}
           </p>
           <Link
             href="/"

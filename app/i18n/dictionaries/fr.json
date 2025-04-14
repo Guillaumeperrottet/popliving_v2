@@ -164,6 +164,7 @@
     "description": "Situé à Riaz, au cœur de la Gruyère, cet immeuble bénéficie d'une localisation idéale. Vous trouverez à proximité des commerces et des transports publics facilitant vos déplacements dans toute la région."
   },
   "common": {
-    "back_to_home": "Retour à l'accueil"
+    "back_to_home": "Retour à l'accueil",
+    "redirect_message": "Vous serez redirigé dans {{seconds}} secondes."
   }
 }
