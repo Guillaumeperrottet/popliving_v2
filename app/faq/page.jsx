@@ -38,16 +38,8 @@ export default function About() {
     <>
       <Navbar />
       <main className="mt-20">
-        {/* Section principale */}
-        <section className="relative h-[60vh] bg-gradient-to-r from-orange-500 to-white flex flex-col items-center justify-center text-center">
-          <h1 className="text-white text-5xl font-bold">À propos de Popliving</h1>
-          <p className="text-white text-lg mt-4">
-            Découvrez notre concept de coliving moderne et flexible.
-          </p>
-        </section>
-
         {/* Section FAQ */}
-        <section className="container mx-auto px-8 py-16">
+        <section className="text-center container mx-auto px-8 py-16">
           <h2 className="text-3xl font-bold mb-8">Questions Fréquemment Posées</h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (

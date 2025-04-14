@@ -13,7 +13,7 @@ export default function SubtitleChanger({ subtitles }) {
   }, [subtitles]);
 
   return (
-    <h2 className="text-white text-2xl mt-4 transition-all duration-500">
+    <h2 className="text-blakc text-2xl mt-4 transition-all duration-500">
       {subtitles[index]}
     </h2>
   );
