@@ -69,7 +69,16 @@ export default function Footer() {
           </div>
 
           <div className="text-center mt-4 text-gray-500 text-sm">
-            Code with <span className="text-red-500">❤</span> by Guillaume
+            Code with <span className="text-red-500">❤</span> by{" "}
+            <a
+              href="https://github.com/Guillaumeperrottet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+              style={{ cursor: "url('/images/fun-cursor.png'), auto" }}
+            >
+              Guillaume
+            </a>
           </div>
         </div>
       </div>
