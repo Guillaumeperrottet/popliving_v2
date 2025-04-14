@@ -51,8 +51,8 @@ export default function Booking() {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto px-8 py-16">
-        <h1 className="text-3xl font-bold mb-8">Demande de disponibilité</h1>
+      <main className="container mx-auto px-8 py-22">
+        <h1 className="text-center text-3xl font-bold mb-8">Demande de disponibilité</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <h2 className="text-xl font-semibold mb-4">Choisissez votre chambre</h2>
           <select
@@ -145,7 +145,7 @@ export default function Booking() {
           ></textarea>
           <button
             type="submit"
-            className="bg-red-500 hover:bg-red-600 text-white py-3 px-6 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
+            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded transition-colors duration-300"
           >
             Envoyer
           </button>
