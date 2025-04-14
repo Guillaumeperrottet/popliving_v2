@@ -1,0 +1,164 @@
+{
+  "home": {
+    "hero": {
+      "title": "Estancia flexible, corta y larga duración",
+      "description": "Encuentra la serenidad y el confort de un hogar, donde cada estudio es un refugio acogedor para vivir en tranquilidad",
+      "learn_more": "Saber más",
+      "image_alt": "Una imagen hermosa"
+    },
+    "concept": {
+      "title": "El Concepto",
+      "description": "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. Compartimos nuestro espacio de vida para crear vínculos, intercambiar experiencias y crecer juntos como comunidad.",
+      "detail": "Detalles"
+    },
+    "rooms": {
+      "availability_request": "Solicitud de disponibilidad",
+      "title": "Nuestras Habitaciones",
+      "simple_room_title": "Habitación Simple",
+      "simple_room_description": "WC/Ducha privada\nCocina comunitaria\nTV/WIFI/Chromecast\nRopa de cama cómoda\nServicio de conserjería\nLavandería",
+      "studio_title": "Estudio Independiente",
+      "studio_description": "WC/Ducha privada\nCocina equipada\nTV/WIFI/Chromecast\nRopa de cama cómoda\nServicio de conserjería\nLavandería",
+      "shared_apartment_title": "Apartamento Compartido",
+      "shared_apartment_description": "WC/Ducha compartido\nCocina equipada\nTV/WIFI/Chromecast\nRopa de cama cómoda\nServicio de conserjería\nLavandería",
+      "learn_more": "Saber más",
+      "simple_room_image_alt": "Imagen de la habitación simple",
+      "studio_image_alt": "Imagen del estudio independiente",
+      "shared_apartment_image_alt": "Imagen del apartamento compartido"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "storage_title": "Almacenamiento",
+      "storage_description": "Si necesitas, te proporcionamos un espacio de almacenamiento. Nuestros espacios modulares se adaptan a tus necesidades, sin importar la duración.",
+      "cleaning_title": "Limpieza",
+      "cleaning_description": "Ofrecemos servicios de limpieza a pedido. Concéntrate en lo que realmente importa para ti, y nosotros nos aseguramos de que tu espacio se mantenga acogedor y limpio.",
+      "parking_title": "Estacionamiento",
+      "parking_description": "Hay plazas de estacionamiento disponibles en cantidad limitada, así que no dudes en reservar la tuya.",
+      "fitness_title": "Centro de Fitness",
+      "fitness_description": "Situada a 150m",
+      "epicerie_title": "Tienda de comestibles",
+      "epicerie_description": "Situada a 500m"
+    }
+  },
+  "booking": {
+    "request_availability": "Solicitud de disponibilidad",
+    "correct_errors": "Por favor, corrija los siguientes errores:",
+    "choose_room": "Elija una habitación",
+    "room_types": {
+      "simple": "Habitación Simple",
+      "studio": "Estudio Independiente",
+      "shared": "Apartamento Compartido"
+    },
+    "check_in_date": "Fecha de llegada",
+    "stay_duration": "Duración de la estancia",
+    "durations": {
+      "one_week": "1 semana",
+      "one_month": "1 mes",
+      "two_months_plus": "2 meses o más"
+    },
+    "message": "Mensaje",
+    "message_placeholder": "Deja un mensaje...",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "submit": "Enviar"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "concept": "Concepto",
+    "situation": "Situación",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "book_now": "Solicitud de disponibilidad"
+  },
+  "about": {
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "questions": {
+        "q1": {
+          "title": "¿Para quién es el coliving?",
+          "answer": "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. La edad promedio de nuestros residentes está entre 24 y 36 años, pero la mentalidad y el gusto por la vida en comunidad son lo más importante."
+        },
+        "q2": {
+          "title": "¿Cuál es la duración mínima de la estancia?",
+          "answer": "No hay una duración mínima de estancia. Aunque la mayoría de nuestros residentes se quedan varios meses, también están disponibles estancias semanales o de fin de semana."
+        },
+        "q3": {
+          "title": "¿Hay opciones para parejas?",
+          "answer": "Vivir como pareja en una casa de coliving es una experiencia enriquecedora. Algunas de nuestras habitaciones están disponibles para ocupación doble."
+        },
+        "q4": {
+          "title": "¿Puedo registrar mi dirección residencial en el coliving?",
+          "answer": "Sí, puedes registrar tu dirección residencial en nuestra instalación y recibir correo aquí. Sin embargo, el registro solo puede hacerse después de tu fecha de mudanza."
+        },
+        "q5": {
+          "title": "¿Puedo traer una mascota?",
+          "answer": "No, lamentablemente no podemos aceptar mascotas en el edificio debido a la falta de espacio, alergias y razones de limpieza."
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Acerca de",
+      "description": "El coliving es para quienes disfrutan vivir con otros y ser parte de una comunidad. Compartimos nuestro espacio de vida para crear vínculos, intercambiar experiencias y crecer juntos como comunidad."
+    },
+    "quick_links": {
+      "title": "Enlaces Rápidos",
+      "home": "Inicio",
+      "booking_request": "Solicitud de disponibilidad",
+      "faq": "FAQ",
+      "contact": "Contacto"
+    },
+    "contact_us": {
+      "title": "Contáctanos"
+    },
+    "copyright": "Popliving. Todos los derechos reservados."
+  },
+  "reservation": {
+    "success": "¡Su solicitud ha sido enviada con éxito!",
+    "failure": "No se pudo guardar la reserva. Por favor, corrija los errores a continuación.",
+    "confirmation_subject": "Confirmación de reserva",
+    "confirmation_message": "Su solicitud ha sido recibida. Aquí está el resumen a continuación. Responderemos a su solicitud dentro de 2 días hábiles.",
+    "summary": {
+      "message": "Mensaje",
+      "dates": "Fechas solicitadas"
+    }
+  },
+  "concept": {
+    "subtitle": {
+      "subtitle1": "Vive de forma diferente",
+      "subtitle2": "Simplifica tu día a día",
+      "subtitle3": "Comparte espacios únicos"
+    },
+    "services": {
+      "title": "Descubre Nuestro Concepto"
+    },
+    "cards": {
+      "flexible": {
+        "title": "Alquiler Flexible",
+        "description": "Elige alquilar tu estudio por una semana, un mes o varios meses, según tus necesidades y estilo de vida."
+      },
+      "cohabitation": {
+        "title": "Cohabitación",
+        "description": "Crea conexiones con otros residentes en un entorno amigable que fomente el intercambio y el compartir experiencias."
+      },
+      "services": {
+        "title": "Servicios Todo Incluido",
+        "description": "Disfruta de un entorno de vida sin preocupaciones con servicios como WiFi, limpieza, almacenamiento y más."
+      },
+      "common_areas": {
+        "title": "Áreas Comunes",
+        "description": "Accede a espacios compartidos bien diseñados para relajarte, trabajar o socializar, ofreciendo un equilibrio entre privacidad y vida comunitaria."
+      },
+      "peaceful": {
+        "title": "Ambiente Tranquilo",
+        "description": "Vive en un entorno tranquilo e inspirador, perfecto para recargar energías y concentrarte en lo que realmente importa, entre la ciudad y la montaña."
+      }
+    }
+  },
+  "situation": {
+    "description": "Ubicado en Riaz, en el corazón de Gruyère, este edificio cuenta con una ubicación ideal. Cerca, encontrarás tiendas y transporte público que facilitan el desplazamiento por la región."
+  }
+}

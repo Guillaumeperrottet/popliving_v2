@@ -1,27 +1,32 @@
 // components/Footer.jsx
+"use client";
+
 import Link from 'next/link';
+import { useTranslation } from '@/app/i18n/client';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-16 px-4 md:px-8 bg-gray-50">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-6">Liens rapides</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('footer.quick_links.title')}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-orange-500 transition-colors">
-                  Home
+                  {t('footer.quick_links.home')}
                 </Link>
               </li>
               <li>
                 <Link href="/booking" className="text-gray-600 hover:text-orange-500 transition-colors">
-                  Demande de disponibilité
+                  {t('footer.quick_links.booking_request')}
                 </Link>
               </li>
               <li>
                 <Link href="/faq" className="text-gray-600 hover:text-orange-500 transition-colors">
-                  FAQ
+                  {t('footer.quick_links.faq')}
                 </Link>
               </li>
               <li>
@@ -36,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-6">Contactez-nous</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('footer.contact_us.title')}</h3>
             <ul className="space-y-3">
               <li className="text-gray-600">
                 info@campus-gerance.ch
@@ -56,11 +61,12 @@ export default function Footer() {
 
         <div className="mt-8 pt-4 border-t border-gray-200">
           <div className="flex flex-col md:flex-row md:justify-between items-center">
+            {/* Vous pouvez ajouter d'autres éléments traduits ici si besoin */}
           </div>
 
           <div className="text-center text-gray-500 text-sm">
-              © 2025 Popliving. Tous droits réservés.
-            </div>
+            © 2025 {t('footer.copyright')}
+          </div>
 
           <div className="text-center mt-4 text-gray-500 text-sm">
             Code with <span className="text-red-500">❤</span> by Guillaume

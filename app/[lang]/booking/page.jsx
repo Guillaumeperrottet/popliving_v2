@@ -2,16 +2,18 @@
 
 import Navbar from '@/components/Navbar';
 import { useState } from "react";
-
+import { useTranslation } from '@/app/i18n/client';
 
 export default function Booking() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     arrivalDate: "",
-    chooseRoom: "chambre simple",
+    chooseRoom: "chambre simple", // Vous pouvez également utiliser des codes et adapter en backend si besoin
     stayDuration: "1 semaine",
     adresse: "",
     message: "",
@@ -19,7 +21,7 @@ export default function Booking() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -37,14 +39,14 @@ export default function Booking() {
       if (response.ok) {
         const result = await response.json();
         console.log(result.message);
-        alert('Votre demande a été envoyée avec succès ! Un email a été transmis.');
+        alert(t('booking.success'));
       } else {
-        console.error('Erreur lors de l\'envoi de l\'email');
-        alert('Une erreur est survenue. Veuillez réessayer.');
+        console.error(t('booking.error_log'));
+        alert(t('booking.error'));
       }
     } catch (error) {
-      console.error('Erreur réseau :', error);
-      alert('Une erreur réseau est survenue. Veuillez réessayer.');
+      console.error('Network error:', error);
+      alert(t('booking.network_error'));
     }
   };
 
@@ -52,47 +54,47 @@ export default function Booking() {
     <>
       <Navbar />
       <main className="container mx-auto px-8 py-22">
-        <h1 className="text-center text-3xl font-bold mb-8">Demande de disponibilité</h1>
+        <h1 className="text-center text-3xl font-bold mb-8">{t("booking.request_availability")}</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-xl font-semibold mb-4">Choisissez votre chambre</h2>
+          <h2 className="text-xl font-semibold mb-4">{t("booking.choose_room")}</h2>
           <select
             name="chooseRoom"
             value={formData.chooseRoom}
             onChange={handleChange}
             className="border border-gray-300 p-3 rounded w-full"
           >
-            <option value="chambre simple">Chambre simple</option>
-            <option value="studio independant">Studio indépendant</option>
-            <option value="appartement partage">Appartement partagé</option>
+            <option value="chambre simple">{t("booking.room_types.simple")}</option>
+            <option value="studio independant">{t("booking.room_types.studio")}</option>
+            <option value="appartement partage">{t("booking.room_types.shared")}</option>
           </select>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <h2 className="text-xl font-semibold mb-4">Date d'arrivée</h2>
+            <h2 className="text-xl font-semibold mb-4">{t("booking.check_in_date")}</h2>
             <input
               type="date"
               name="arrivalDate"
-              placeholder="Date d'arrivée"
+              placeholder={t("booking.check_in_date")}
               value={formData.arrivalDate}
               onChange={handleChange}
               className="border border-gray-300 p-3 rounded"
               required
             />
-            <h2 className="text-xl font-semibold mb-4">Durée du séjour</h2>
+            <h2 className="text-xl font-semibold mb-4">{t("booking.stay_duration")}</h2>
             <select
-                name="stayDuration"
-                value={formData.stayDuration}
-                onChange={handleChange}
-                className="border border-gray-300 p-3 rounded w-full"
-              >
-                <option value="1 semaine">1 semaine</option>
-                <option value="1 mois">1 mois</option>
-                <option value="2 mois et plus">2 mois et plus</option>
-              </select>
+              name="stayDuration"
+              value={formData.stayDuration}
+              onChange={handleChange}
+              className="border border-gray-300 p-3 rounded w-full"
+            >
+              <option value="1 semaine">{t("booking.durations.one_week")}</option>
+              <option value="1 mois">{t("booking.durations.one_month")}</option>
+              <option value="2 mois et plus">{t("booking.durations.two_months_plus")}</option>
+            </select>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
               type="text"
               name="firstName"
-              placeholder="Prénom"
+              placeholder={t("booking.first_name")}
               value={formData.firstName}
               onChange={handleChange}
               className="border border-gray-300 p-3 rounded"
@@ -101,7 +103,7 @@ export default function Booking() {
             <input
               type="text"
               name="lastName"
-              placeholder="Nom"
+              placeholder={t("booking.last_name")}
               value={formData.lastName}
               onChange={handleChange}
               className="border border-gray-300 p-3 rounded"
@@ -111,7 +113,7 @@ export default function Booking() {
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder={t("booking.email")}
             value={formData.email}
             onChange={handleChange}
             className="border border-gray-300 p-3 rounded w-full"
@@ -120,7 +122,7 @@ export default function Booking() {
           <input
             type="tel"
             name="phone"
-            placeholder="Téléphone"
+            placeholder={t("booking.phone")}
             value={formData.phone}
             onChange={handleChange}
             className="border border-gray-300 p-3 rounded w-full"
@@ -129,7 +131,7 @@ export default function Booking() {
           <input
             type="text"
             name="adresse"
-            placeholder="Adresse"
+            placeholder={t("booking.address")}
             value={formData.adresse}
             onChange={handleChange}
             className="border border-gray-300 p-3 rounded w-full"
@@ -137,7 +139,7 @@ export default function Booking() {
           />
           <textarea
             name="message"
-            placeholder="Laissez un message..."
+            placeholder={t("booking.message_placeholder")}
             value={formData.message}
             onChange={handleChange}
             className="border border-gray-300 p-3 rounded w-full"
@@ -147,7 +149,7 @@ export default function Booking() {
             type="submit"
             className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded transition-colors duration-300"
           >
-            Envoyer
+            {t("booking.submit")}
           </button>
         </form>
       </main>
