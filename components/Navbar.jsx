@@ -32,9 +32,15 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#"
+          <a href="/faq"
               className="text-gray-700 transition">
-            Contact
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="/booking"
+              className="text-gray-700 transition">
+            Demande de disponibilité
           </a>
         </li>
       </ul>
@@ -83,13 +89,16 @@ export default function Navbar() {
             Situation
           </a>
         </li>
-        <li className="w-full text-center">
-          <a
-            href="#"
-            className="block py-2 text-black hover:bg-gray-100 transition w-full"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
+        <li>
+          <a href="/faq"
+              className="text-gray-700 transition">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="/booking"
+              className="text-gray-700 transition">
+            Demande de disponibilité
           </a>
         </li>
       </ul>
