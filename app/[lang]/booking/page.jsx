@@ -161,7 +161,20 @@ export default function Booking() {
           </button>
         </form>
       </main>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          success: {
+            style: {
+              background: 'orange',
+            },
+          },
+          error: {
+            style: {
+              background: 'red',
+            },
+          },
+        }}
+      />
     </>
   );
 }
