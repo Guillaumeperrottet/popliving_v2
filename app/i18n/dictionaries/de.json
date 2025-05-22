@@ -231,5 +231,104 @@
         "answer": "Ja, Sie können 7 Tage die Woche auf Ihren Lagerraum zugreifen."
       }
     }
+  },
+
+  "seo": {
+    "site": {
+      "name": "PopLiving",
+      "url": "https://popliving.ch",
+      "description": "Flexibles Coliving in Riaz, Greyerz. Möblierte Studios und Lagerräume für kurze oder lange Aufenthalte.",
+      "keywords": "coliving, flexibles Wohnen, möbliertes Studio, Riaz, Greyerz, temporäre Unterkunft, Lagerraum, Wohngemeinschaft",
+      "author": "PopLiving",
+      "locale": "de_CH",
+      "type": "website"
+    },
+    "pages": {
+      "home": {
+        "title": "PopLiving - Flexibles Coliving in Riaz | Möblierte Studios & Lagerraum",
+        "description": "Entdecke PopLiving in Riaz, Greyerz. Möblierte Studios, geteilte Zimmer und Lagerräume. Flexible Mieten für kurze und lange Aufenthalte. Jetzt reservieren!",
+        "keywords": "Coliving Riaz, möbliertes Studio Greyerz, flexible Miete Schweiz, temporäre Unterkunft, Wohngemeinschaft",
+        "canonical": "/",
+        "ogType": "website",
+        "schema": {
+          "@type": "Organization",
+          "name": "PopLiving",
+          "url": "https://popliving.ch",
+          "logo": "https://popliving.ch/images/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Route de la Gruyère 45",
+            "postalCode": "1632",
+            "addressLocality": "Riaz",
+            "addressCountry": "CH"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+41-26-913-89-20",
+            "contactType": "Kundendienst"
+          }
+        }
+      },
+      "concept": {
+        "title": "Unser Coliving-Konzept | PopLiving Riaz - Gemeinschaftlich Leben",
+        "description": "Entdecke das PopLiving-Konzept: flexibles Coliving, geteilte Räume, inklusive Dienstleistungen. Eine neue Art zu leben – gemeinsam in Riaz, Greyerz.",
+        "keywords": "Coliving Konzept, gemeinschaftliches Leben, geteilte Räume, inklusive Services, flexible Miete",
+        "canonical": "/concept"
+      },
+      "storage": {
+        "title": "Lagerraum mieten in Riaz | XS, M, XL Boxen | PopLiving",
+        "description": "Miete einen sicheren Lagerraum in Riaz. Größen XS (5–7 m³), M (11–16 m³), XL (27–39 m³). Zugang 7/7, sicher, keine Mindestdauer.",
+        "keywords": "Lagerraum Riaz, Lagereinheit Greyerz, Box mieten, Self-Storage Schweiz, sichere Lagerung",
+        "canonical": "/storage",
+        "schema": {
+          "@type": "Service",
+          "name": "Vermietung von Lagerräumen",
+          "description": "Sicherer Lagerraumservice in Riaz",
+          "provider": {
+            "@type": "Organization",
+            "name": "PopLiving"
+          },
+          "areaServed": "Riaz, Greyerz, Freiburg"
+        }
+      },
+      "booking": {
+        "title": "Reservierung | Verfügbarkeitsanfrage | PopLiving Riaz",
+        "description": "Reserviere dein Studio oder deinen Lagerraum bei PopLiving Riaz. Einfaches Formular, Antwort innerhalb von 3 Tagen. Zimmer und Lager verfügbar.",
+        "keywords": "PopLiving Reservierung, Verfügbarkeitsanfrage, Booking Riaz, Studio reservieren",
+        "canonical": "/booking",
+        "robots": "noindex, follow"
+      },
+      "situation": {
+        "title": "Lage & Anfahrt | PopLiving Riaz im Herzen der Greyerz",
+        "description": "PopLiving liegt in Riaz, im Herzen der Greyerz. Nahe an Geschäften und öffentlichen Verkehrsmitteln. Ideale Lage zur Erkundung der Region.",
+        "keywords": "Lage PopLiving, Riaz Greyerz, geografische Lage, öffentlicher Verkehr",
+        "canonical": "/situation"
+      },
+      "faq": {
+        "title": "FAQ | Häufig gestellte Fragen | PopLiving Coliving Riaz",
+        "description": "Antworten auf alle Fragen rund um PopLiving Coliving: Aufenthaltsdauer, Paare, Haustiere, Meldeadresse. Klar und übersichtlich.",
+        "keywords": "FAQ Coliving, PopLiving Fragen, Aufenthaltsinfos, Coliving Regeln",
+        "canonical": "/faq",
+        "schema": {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Für wen ist das Coliving gedacht?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Das Coliving richtet sich an Personen, die gerne mit anderen zusammenleben und Teil einer Gemeinschaft sein möchten. Das Durchschnittsalter unserer Bewohner liegt zwischen 24 und 36 Jahren."
+              }
+            }
+          ]
+        }
+      },
+      "thanks": {
+        "title": "Danke für deine Anfrage | PopLiving",
+        "description": "Deine Anfrage wurde erfolgreich übermittelt. Wir melden uns innerhalb von 3 Arbeitstagen bei dir.",
+        "canonical": "/thanks",
+        "robots": "noindex, nofollow"
+      }
+    }
   }
 }
