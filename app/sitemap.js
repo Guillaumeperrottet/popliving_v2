@@ -54,28 +54,3 @@ export default function sitemap() {
 
   return urls;
 }
-
-// app/robots.js - Génération automatique du robots.txt
-export function robots() {
-  return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: [
-          "/api/",
-          "/admin/",
-          "/private/",
-          "/_next/",
-          "/thanks", // Page de remerciement
-        ],
-      },
-      {
-        userAgent: "GPTBot",
-        disallow: "/", // Bloquer les crawlers IA si souhaité
-      },
-    ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
-  };
-}
