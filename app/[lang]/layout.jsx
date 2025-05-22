@@ -139,6 +139,20 @@ export default async function RootLayout({ children, params }) {
             __html: JSON.stringify(organizationSchema),
           }}
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y5WFHWTPNT"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y5WFHWTPNT');
+    `,
+          }}
+        />
         {/* Autres balises head personnalisées */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
