@@ -3,11 +3,9 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SEOHead from "@/components/SEOHead";
 import { useTranslation } from "@/app/i18n/client";
 
-// Exemple pour la page FAQ avec SEO optimisé
-export default function FAQ() {
+export default function About() {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -15,7 +13,7 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Configuration des FAQ pour le Schema JSON-LD
+  // Récupération des traductions pour la FAQ à partir du dictionnaire
   const faqs = [
     {
       question: t("about.faq.questions.q1.title"),
@@ -41,62 +39,27 @@ export default function FAQ() {
 
   return (
     <>
-      {/* SEO Head Component */}
-      <SEOHead
-        pageKey="faq"
-        // Optionnel: surcharger les métadonnées si nécessaire
-        // customTitle="Titre personnalisé"
-        // customDescription="Description personnalisée"
-      />
-
       <Navbar />
       <main className="mt-20">
-        {/* Section FAQ avec structure sémantique */}
+        {/* Section FAQ */}
         <section className="text-center container mx-auto px-8 py-16">
-          <header>
-            <h1 className="text-3xl font-bold mb-8">{t("about.faq.title")}</h1>
-          </header>
-
-          <div
-            className="space-y-4"
-            itemScope
-            itemType="https://schema.org/FAQPage"
-          >
+          <h2 className="text-3xl font-bold mb-8">{t("about.faq.title")}</h2>
+          <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <article
-                key={index}
-                className="border-b"
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
-              >
+              <div key={index} className="border-b">
                 <button
                   onClick={() => toggleAccordion(index)}
                   className="w-full text-left py-4 flex justify-between items-center"
-                  aria-expanded={openIndex === index}
-                  aria-controls={`faq-answer-${index}`}
                 >
-                  <h2 className="text-xl font-semibold" itemProp="name">
-                    {faq.question}
-                  </h2>
-                  <span className="text-2xl" aria-hidden="true">
+                  <span className="text-xl font-semibold">{faq.question}</span>
+                  <span className="text-2xl">
                     {openIndex === index ? "-" : "+"}
                   </span>
                 </button>
-
                 {openIndex === index && (
-                  <div
-                    id={`faq-answer-${index}`}
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <p className="text-gray-600 mt-2 pb-4" itemProp="text">
-                      {faq.answer}
-                    </p>
-                  </div>
+                  <p className="text-gray-600 mt-2">{faq.answer}</p>
                 )}
-              </article>
+              </div>
             ))}
           </div>
         </section>
