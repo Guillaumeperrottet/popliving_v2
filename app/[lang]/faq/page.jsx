@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { useTranslation } from '@/app/i18n/client';
+import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { useTranslation } from "@/app/i18n/client";
 
 export default function About() {
   const { t } = useTranslation();
@@ -17,24 +17,24 @@ export default function About() {
   const faqs = [
     {
       question: t("about.faq.questions.q1.title"),
-      answer: t("about.faq.questions.q1.answer")
+      answer: t("about.faq.questions.q1.answer"),
     },
     {
       question: t("about.faq.questions.q2.title"),
-      answer: t("about.faq.questions.q2.answer")
+      answer: t("about.faq.questions.q2.answer"),
     },
     {
       question: t("about.faq.questions.q3.title"),
-      answer: t("about.faq.questions.q3.answer")
+      answer: t("about.faq.questions.q3.answer"),
     },
     {
       question: t("about.faq.questions.q4.title"),
-      answer: t("about.faq.questions.q4.answer")
+      answer: t("about.faq.questions.q4.answer"),
     },
     {
       question: t("about.faq.questions.q5.title"),
-      answer: t("about.faq.questions.q5.answer")
-    }
+      answer: t("about.faq.questions.q5.answer"),
+    },
   ];
 
   return (
@@ -53,7 +53,7 @@ export default function About() {
                 >
                   <span className="text-xl font-semibold">{faq.question}</span>
                   <span className="text-2xl">
-                    {openIndex === index ? '-' : '+'}
+                    {openIndex === index ? "-" : "+"}
                   </span>
                 </button>
                 {openIndex === index && (

@@ -231,5 +231,103 @@
         "answer": "Sí, puede acceder a su espacio de almacenamiento los 7 días de la semana."
       }
     }
+  },
+  "seo": {
+    "site": {
+      "name": "PopLiving",
+      "url": "https://popliving.ch",
+      "description": "Coliving flexible en Riaz, Gruyère. Estudios amueblados y espacios de almacenamiento para estancias cortas y largas.",
+      "keywords": "coliving, alquiler flexible, estudio amueblado, Riaz, Gruyère, alojamiento temporal, almacenamiento, apartamento compartido",
+      "author": "PopLiving",
+      "locale": "es_CH",
+      "type": "website"
+    },
+    "pages": {
+      "home": {
+        "title": "PopLiving - Coliving Flexible en Riaz | Estudios Amueblados y Almacenamiento",
+        "description": "Descubre PopLiving en Riaz, Gruyère. Estudios amueblados, habitaciones compartidas y espacios de almacenamiento. Alquiler flexible para estancias cortas y largas. ¡Reserva ahora!",
+        "keywords": "coliving Riaz, estudio amueblado Gruyère, alquiler flexible Suiza, alojamiento temporal, apartamento compartido",
+        "canonical": "/",
+        "ogType": "website",
+        "schema": {
+          "@type": "Organization",
+          "name": "PopLiving",
+          "url": "https://popliving.ch",
+          "logo": "https://popliving.ch/images/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Route de la Gruyère 45",
+            "postalCode": "1632",
+            "addressLocality": "Riaz",
+            "addressCountry": "CH"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+41-26-913-89-20",
+            "contactType": "servicio al cliente"
+          }
+        }
+      },
+      "concept": {
+        "title": "Nuestro Concepto de Coliving | PopLiving Riaz - Vida Comunitaria",
+        "description": "Descubre el concepto PopLiving: coliving flexible, espacios compartidos, servicios incluidos. Una nueva forma de vivir en comunidad en Riaz, Gruyère.",
+        "keywords": "concepto coliving, vida comunitaria, espacios compartidos, servicios incluidos, alquiler flexible",
+        "canonical": "/concept"
+      },
+      "storage": {
+        "title": "Alquiler de Almacenamiento en Riaz | Espacios XS, M, XL | PopLiving",
+        "description": "Alquila un espacio de almacenamiento en Riaz. Tamaños XS (5-7m³), M (11-16m³), XL (27-39m³). Acceso 7/7, seguro, sin duración mínima.",
+        "keywords": "almacenamiento Riaz, trastero Gruyère, alquiler de box, self-storage Suiza, almacenamiento seguro",
+        "canonical": "/storage",
+        "schema": {
+          "@type": "Service",
+          "name": "Alquiler de espacios de almacenamiento",
+          "description": "Servicio de alquiler de espacios de almacenamiento seguros en Riaz",
+          "provider": {
+            "@type": "Organization",
+            "name": "PopLiving"
+          },
+          "areaServed": "Riaz, Gruyère, Friburgo"
+        }
+      },
+      "booking": {
+        "title": "Reserva | Solicitud de Disponibilidad | PopLiving Riaz",
+        "description": "Reserva tu estudio o espacio de almacenamiento en PopLiving Riaz. Formulario simple, respuesta en 3 días. Habitaciones y almacenamiento disponibles.",
+        "keywords": "reserva PopLiving, solicitud disponibilidad, booking Riaz, reservar estudio",
+        "canonical": "/booking",
+        "robots": "noindex, follow"
+      },
+      "situation": {
+        "title": "Ubicación y Acceso | PopLiving Riaz, Corazón de la Gruyère",
+        "description": "PopLiving está situado en Riaz, en el corazón de la Gruyère. Cerca de comercios y transporte público. Ubicación ideal para explorar la región.",
+        "keywords": "ubicación PopLiving, Riaz Gruyère, situación geográfica, transporte público",
+        "canonical": "/situation"
+      },
+      "faq": {
+        "title": "FAQ | Preguntas Frecuentes | PopLiving Coliving Riaz",
+        "description": "Todas tus preguntas sobre el coliving PopLiving: duración de la estancia, parejas, mascotas, dirección de residencia. Respuestas claras y detalladas.",
+        "keywords": "FAQ coliving, preguntas PopLiving, información de estancia, reglas coliving",
+        "canonical": "/faq",
+        "schema": {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿A quién está dirigido el coliving?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El coliving está dirigido a personas que disfrutan vivir con otros y formar parte de una comunidad. La edad media de nuestros residentes está entre los 24 y 36 años."
+              }
+            }
+          ]
+        }
+      },
+      "thanks": {
+        "title": "Gracias por tu solicitud | PopLiving",
+        "description": "Tu solicitud ha sido enviada correctamente. Te responderemos en un plazo de 3 días laborables.",
+        "canonical": "/thanks",
+        "robots": "noindex, nofollow"
+      }
+    }
   }
 }
