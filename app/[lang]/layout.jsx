@@ -1,8 +1,15 @@
+// Solution 1: Implémentation avec @next/third-parties (Recommandée)
+
+// 1. D'abord, installer le package
+// npm install @next/third-parties
+
+// 2. Modifier app/[lang]/layout.jsx
 import { Inter } from "next/font/google";
 import { getDictionary } from "../i18n/server";
 import { I18nProvider } from "../i18n/client";
 import { locales } from "../i18n/settings";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "../../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,18 +19,17 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-// Génération des métadonnées SEO dynamiques
 export async function generateMetadata({ params }) {
+  // ... votre code existant pour les métadonnées ...
   const resolvedParams = await params;
   const currentLang = resolvedParams?.lang || defaultLanguage;
   const validLang = locales.includes(currentLang)
     ? currentLang
     : defaultLanguage;
 
-  // Obtenir le dictionnaire pour les traductions SEO
   const dictionary = await getDictionary(validLang);
 
-  // Données de base du site
+  // Vos métadonnées existantes...
   const siteData = {
     name: dictionary.seo?.site?.name || "PopLiving",
     url: dictionary.seo?.site?.url || "https://popliving.ch",
@@ -32,7 +38,6 @@ export async function generateMetadata({ params }) {
     locale: dictionary.seo?.site?.locale || `${validLang}_CH`,
   };
 
-  // Métadonnées par défaut (homepage)
   const pageData = {
     title: dictionary.seo?.pages?.home?.title || siteData.name,
     description:
@@ -67,14 +72,6 @@ export async function generateMetadata({ params }) {
       siteName: siteData.name,
       title: pageData.title,
       description: pageData.description,
-      // images: [
-      //   {
-      //     url: `${siteData.url}/images/og-image.jpg`,
-      //     width: 1200,
-      //     height: 630,
-      //     alt: pageData.title,
-      //   },
-      // ],
     },
     twitter: {
       card: "summary_large_image",
@@ -94,7 +91,6 @@ export async function generateMetadata({ params }) {
     },
     verification: {
       google: "your-google-verification-code",
-      // Ajoutez d'autres codes de vérification si nécessaire
     },
     category: "Real Estate",
   };
@@ -115,7 +111,6 @@ export default async function RootLayout({ children, params }) {
     "@type": "Organization",
     name: "PopLiving",
     url: "https://popliving.ch",
-    // logo: "https://popliving.ch/images/logo.png",
     description:
       dictionary.seo?.site?.description || "Coliving flexible à Riaz, Gruyère",
     address: {
@@ -159,7 +154,12 @@ export default async function RootLayout({ children, params }) {
           {children}
         </I18nProvider>
         <Analytics />
-        <GoogleAnalytics gaId="G-Y5WFHWTPNT" />
+
+        {/* Google Analytics - SEULEMENT en production */}
+        {process.env.NODE_ENV === "production" &&
+          process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+          )}
       </body>
     </html>
   );
