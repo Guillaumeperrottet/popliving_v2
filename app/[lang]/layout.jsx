@@ -159,6 +159,7 @@ export default async function RootLayout({ children, params }) {
           {children}
         </I18nProvider>
         <Analytics />
+        <GoogleAnalytics gaId="G-Y5WFHWTPNT" />
       </body>
     </html>
   );
