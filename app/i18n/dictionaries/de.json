@@ -64,11 +64,20 @@
     "email": "E-Mail",
     "phone": "Telefon",
     "address": "Adresse",
-    "submit": "Absenden"
+    "submit": "Absenden",
+    "room_option": "Zimmer buchen",
+    "storage_option": "Lagerraum buchen",
+    "choose_storage": "Wählen Sie einen Lagerraum",
+    "storage_types": {
+      "xs": "XS - Kleiner Raum (5-7m³)",
+      "m": "M - Mittlerer Raum (11-16m³)",
+      "xl": "XL - Großer Raum (27-39m³)"
+    }
   },
   "navbar": {
     "home": "Startseite",
     "concept": "Konzept",
+    "storage": "Lagerraum zu mieten",
     "situation": "Lage",
     "about": "Über uns",
     "contact": "Kontakt",
@@ -166,5 +175,61 @@
   "common": {
     "back_to_home": "Zurück zur Startseite",
     "redirect_message": "Sie werden in {{seconds}} Sekunden weitergeleitet."
+  },
+  "storage": {
+    "availability_button": "Verfügbarkeitsanfrage",
+    "hero": {
+      "title": "Unsere Lagerräume zu vermieten",
+      "description": "Vermietung von Lagerräumen. Ob Sie einfach nur etwas mehr Platz in Ihrem Keller gewinnen oder eine ganze Wohnung einlagern möchten, wir finden mit Sicherheit die optimale Lösung."
+    },
+    "volume": "Volumen",
+    "surface": "Fläche",
+    "reference": "Referenzwert",
+    "space_for": "Platz für",
+    "options": {
+      "xs": {
+        "volume": "5-7m³",
+        "surface": "1,9-2,6m²",
+        "reference": "Kleine Möbel",
+        "space_for": "20 Kartons, 1 Esstisch, 2 Stühle"
+      },
+      "m": {
+        "volume": "11-16m³",
+        "surface": "4-6m²",
+        "reference": "2 Zimmer",
+        "space_for": "30 Kartons, Sofa, Sessel, TV, Schrank, Bett, 4 Stühle, Tisch"
+      },
+      "xl": {
+        "volume": "27-39m³",
+        "surface": "10-14,5m²",
+        "reference": "4 Zimmer",
+        "space_for": "80 Kartons, Sofa, Sessel, TV, 2 Schränke, Bett, 6 Stühle, Tisch, 2 Kinderzimmer, Büro, Keller"
+      }
+    },
+    "calculator": {
+      "title": "Volumenrechner",
+      "description": "Nutzen Sie unseren Volumenrechner, um Ihren Lagerplatzbedarf genau zu schätzen",
+      "link_text": "Zum Volumenrechner"
+    },
+    "cta": {
+      "title": "Benötigen Sie einen Lagerraum?",
+      "description": "Kontaktieren Sie uns jetzt, um Ihren Lagerraum zu reservieren oder weitere Informationen zu erhalten.",
+      "button": "Anfrage stellen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Wie lange ist die Mindestmietdauer?",
+        "answer": "Es gibt keine Mindestdauer. Sie können Ihren Raum je nach Bedarf für eine Woche, einen Monat oder länger mieten."
+      },
+      "q2": {
+        "question": "Sind die Räume sicher?",
+        "answer": "Ja, alle unsere Lagerräume sind mit einem kontrollierten Zugangssystem und 24/7-Überwachung gesichert."
+      },
+      "q3": {
+        "question": "Kann ich jederzeit auf meinen Lagerraum zugreifen?",
+        "answer": "Ja, Sie können 7 Tage die Woche auf Ihren Lagerraum zugreifen, entsprechend den Öffnungszeiten des Gebäudes."
+      }
+    }
   }
 }

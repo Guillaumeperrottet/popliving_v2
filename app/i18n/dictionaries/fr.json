@@ -64,11 +64,20 @@
     "email": "Email",
     "phone": "Téléphone",
     "address": "Adresse",
-    "submit": "Envoyer"
+    "submit": "Envoyer",
+    "room_option": "Réserver une chambre",
+    "storage_option": "Réserver un stockage",
+    "choose_storage": "Choisissez un espace de stockage",
+    "storage_types": {
+      "xs": "XS - Petit espace (5-7m³)",
+      "m": "M - Espace moyen (11-16m³)",
+      "xl": "XL - Grand espace (27-39m³)"
+    }
   },
   "navbar": {
     "home": "Accueil",
     "concept": "Concept",
+    "storage": "Stockage à louer",
     "situation": "Situation",
     "about": "FAQ",
     "contact": "Contact",
@@ -166,5 +175,62 @@
   "common": {
     "back_to_home": "Retour à l'accueil",
     "redirect_message": "Vous serez redirigé dans {{seconds}} secondes."
+  },
+  "storage": {
+    "availability_button": "Demande de disponibilité",
+    "hero": {
+      "title": "Nos espaces de stockage à louer",
+      "description": "Location d'espace de stockage. Que vous souhaitiez simplement gagner un peu de place dans votre cave ou bien entreposer un appartement entier, nous trouverons à coup sûr la solution optimale."
+    },
+    "volume": "Volume",
+    "surface": "Surface",
+    "reference": "Valeur de référence",
+    "space_for": "Espace pour",
+    "options": {
+      "xs": {
+        "volume": "5-7m³",
+        "surface": "1.9-2.6m²",
+        "reference": "Petit mobilier",
+        "space_for": "20 cartons, 1 table à manger, 2 chaises"
+      },
+      "m": {
+        "volume": "11-16m³",
+        "surface": "4-6m²",
+        "reference": "2 pièces",
+        "space_for": "30 cartons, canapé, fauteuil, TV, armoire, lit, 4 chaises, table"
+      },
+      "xl": {
+        "volume": "27-39m³",
+        "surface": "10-14.5m²",
+        "reference": "4 pièces",
+        "space_for": "80 cartons, canapé, fauteuil, TV, 2 placards, lit, 6 chaises, table, 2 chambres d'enfants, bureau, cave"
+      }
+    },
+
+    "calculator": {
+      "title": "Calculateur de volume",
+      "description": "Utilisez notre calculateur de volume pour estimer précisément vos besoins en stockage",
+      "link_text": "Accéder au calculateur de volume"
+    },
+    "cta": {
+      "title": "Besoin d'un espace de stockage?",
+      "description": "Contactez-nous dès maintenant pour réserver votre espace de stockage ou pour obtenir plus d'informations.",
+      "button": "Faire une demande"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": {
+        "question": "Quelle est la durée minimale de location?",
+        "answer": "Il n'y a pas de durée minimale. Vous pouvez louer votre espace pour une semaine, un mois ou plus longtemps selon vos besoins."
+      },
+      "q2": {
+        "question": "Les espaces sont-ils sécurisés?",
+        "answer": "Oui, tous nos espaces de stockage sont sécurisés avec un système d'accès contrôlé et une surveillance 24h/24."
+      },
+      "q3": {
+        "question": "Puis-je accéder à mon stockage à tout moment?",
+        "answer": "Oui, vous pouvez accéder à votre espace de stockage 7 jours sur 7, selon les horaires d'ouverture du bâtiment."
+      }
+    }
   }
 }

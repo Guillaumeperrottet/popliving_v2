@@ -64,11 +64,20 @@
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "submit": "Submit"
+    "submit": "Submit",
+    "room_option": "Book a Room",
+    "storage_option": "Book Storage",
+    "choose_storage": "Choose a Storage Space",
+    "storage_types": {
+      "xs": "XS - Small Space (5-7m³)",
+      "m": "M - Medium Space (11-16m³)",
+      "xl": "XL - Large Space (27-39m³)"
+    }
   },
   "navbar": {
     "home": "Home",
     "concept": "Concept",
+    "storage": "Storage for rent",
     "situation": "Location",
     "about": "About",
     "contact": "Contact",
@@ -166,5 +175,61 @@
   "common": {
     "back_to_home": "Back to home",
     "redirect_message": "You will be redirected in {{seconds}} seconds."
+  },
+  "storage": {
+    "availability_button": "Availability Request",
+    "hero": {
+      "title": "Our Storage Spaces for Rent",
+      "description": "Storage space rental. Whether you simply want to free up some space in your basement or store an entire apartment's worth of furniture, we'll definitely find the optimal solution for you."
+    },
+    "volume": "Volume",
+    "surface": "Surface Area",
+    "reference": "Reference Value",
+    "space_for": "Space for",
+    "options": {
+      "xs": {
+        "volume": "5-7m³",
+        "surface": "1.9-2.6m²",
+        "reference": "Small furniture",
+        "space_for": "20 boxes, 1 dining table, 2 chairs"
+      },
+      "m": {
+        "volume": "11-16m³",
+        "surface": "4-6m²",
+        "reference": "2 rooms",
+        "space_for": "30 boxes, sofa, armchair, TV, wardrobe, bed, 4 chairs, table"
+      },
+      "xl": {
+        "volume": "27-39m³",
+        "surface": "10-14.5m²",
+        "reference": "4 rooms",
+        "space_for": "80 boxes, sofa, armchair, TV, 2 wardrobes, bed, 6 chairs, table, 2 children's rooms, office, cellar"
+      }
+    },
+    "calculator": {
+      "title": "Volume Calculator",
+      "description": "Use our volume calculator to accurately estimate your storage needs",
+      "link_text": "Access the volume calculator"
+    },
+    "cta": {
+      "title": "Need a Storage Space?",
+      "description": "Contact us now to reserve your storage space or get more information.",
+      "button": "Make a Request"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What is the minimum rental period?",
+        "answer": "There is no minimum duration. You can rent your space for a week, a month, or longer depending on your needs."
+      },
+      "q2": {
+        "question": "Are the spaces secure?",
+        "answer": "Yes, all our storage spaces are secured with a controlled access system and 24/7 surveillance."
+      },
+      "q3": {
+        "question": "Can I access my storage at any time?",
+        "answer": "Yes, you can access your storage space 7 days a week, according to the building's opening hours."
+      }
+    }
   }
 }

@@ -64,11 +64,20 @@
     "email": "Email",
     "phone": "Telefone",
     "address": "Endereço",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "room_option": "Reservar um quarto",
+    "storage_option": "Reservar armazenamento",
+    "choose_storage": "Escolha um espaço de armazenamento",
+    "storage_types": {
+      "xs": "XS - Espaço pequeno (5-7m³)",
+      "m": "M - Espaço médio (11-16m³)",
+      "xl": "XL - Espaço grande (27-39m³)"
+    }
   },
   "navbar": {
     "home": "Início",
     "concept": "Conceito",
+    "storage": "Armazém para aluguer",
     "situation": "Situação",
     "about": "Sobre",
     "contact": "Contato",
@@ -166,5 +175,61 @@
   "common": {
     "back_to_home": "Voltar à página inicial",
     "redirect_message": "Você será redirecionado em {{seconds}} segundos."
+  },
+  "storage": {
+    "availability_button": "Pedido de disponibilidade",
+    "hero": {
+      "title": "Nossos espaços de armazenamento para alugar",
+      "description": "Aluguel de espaço de armazenamento. Seja você simplesmente queira ganhar um pouco de espaço em sua adega ou armazenar um apartamento inteiro, certamente encontraremos a solução ideal."
+    },
+    "volume": "Volume",
+    "surface": "Superfície",
+    "reference": "Valor de referência",
+    "space_for": "Espaço para",
+    "options": {
+      "xs": {
+        "volume": "5-7m³",
+        "surface": "1,9-2,6m²",
+        "reference": "Móveis pequenos",
+        "space_for": "20 caixas, 1 mesa de jantar, 2 cadeiras"
+      },
+      "m": {
+        "volume": "11-16m³",
+        "surface": "4-6m²",
+        "reference": "2 cômodos",
+        "space_for": "30 caixas, sofá, poltrona, TV, armário, cama, 4 cadeiras, mesa"
+      },
+      "xl": {
+        "volume": "27-39m³",
+        "surface": "10-14,5m²",
+        "reference": "4 cômodos",
+        "space_for": "80 caixas, sofá, poltrona, TV, 2 armários, cama, 6 cadeiras, mesa, 2 quartos de crianças, escritório, porão"
+      }
+    },
+    "calculator": {
+      "title": "Calculadora de volume",
+      "description": "Use nossa calculadora de volume para estimar com precisão suas necessidades de armazenamento",
+      "link_text": "Acessar a calculadora de volume"
+    },
+    "cta": {
+      "title": "Precisa de um espaço de armazenamento?",
+      "description": "Entre em contato conosco agora para reservar seu espaço de armazenamento ou obter mais informações.",
+      "button": "Fazer uma solicitação"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": {
+        "question": "Qual é o período mínimo de aluguel?",
+        "answer": "Não há duração mínima. Você pode alugar seu espaço por uma semana, um mês ou mais, dependendo de suas necessidades."
+      },
+      "q2": {
+        "question": "Os espaços são seguros?",
+        "answer": "Sim, todos os nossos espaços de armazenamento são protegidos com um sistema de acesso controlado e vigilância 24 horas por dia, 7 dias por semana."
+      },
+      "q3": {
+        "question": "Posso acessar meu armazenamento a qualquer momento?",
+        "answer": "Sim, você pode acessar seu espaço de armazenamento 7 dias por semana, de acordo com o horário de funcionamento do edifício."
+      }
+    }
   }
 }
