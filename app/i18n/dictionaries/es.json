@@ -180,37 +180,33 @@
     "availability_button": "Solicitud de disponibilidad",
     "hero": {
       "title": "Nuestros espacios de almacenamiento en alquiler",
-      "description": "Alquiler de espacios de almacenamiento. Ya sea que simplemente quiera ganar algo de espacio en su sótano o almacenar un apartamento completo, seguramente encontraremos la solución óptima."
+      "description": "Alquiler de espacios de almacenamiento. Ya sea que simplemente desee ganar un poco de espacio en su sótano o almacenar material, seguramente encontraremos la solución óptima."
     },
     "volume": "Volumen",
     "surface": "Superficie",
     "reference": "Valor de referencia",
-    "space_for": "Espacio para",
+    "space_for": "Ejemplo de espacio para",
     "options": {
       "xs": {
-        "volume": "5-7m³",
-        "surface": "1,9-2,6m²",
+        "volume": "4.4-8.8m³",
+        "surface": "2-4m²",
         "reference": "Muebles pequeños",
         "space_for": "20 cajas, 1 mesa de comedor, 2 sillas"
       },
       "m": {
-        "volume": "11-16m³",
-        "surface": "4-6m²",
+        "volume": "13.2-17.6m³",
+        "surface": "6-8m²",
         "reference": "2 habitaciones",
         "space_for": "30 cajas, sofá, sillón, TV, armario, cama, 4 sillas, mesa"
       },
       "xl": {
-        "volume": "27-39m³",
-        "surface": "10-14,5m²",
+        "volume": "22-26.4m³",
+        "surface": "10-12m²",
         "reference": "4 habitaciones",
         "space_for": "80 cajas, sofá, sillón, TV, 2 armarios, cama, 6 sillas, mesa, 2 habitaciones de niños, oficina, sótano"
       }
     },
-    "calculator": {
-      "title": "Calculadora de volumen",
-      "description": "Utilice nuestra calculadora de volumen para estimar con precisión sus necesidades de almacenamiento",
-      "link_text": "Acceder a la calculadora de volumen"
-    },
+
     "cta": {
       "title": "¿Necesita un espacio de almacenamiento?",
       "description": "Contáctenos ahora para reservar su espacio de almacenamiento u obtener más información.",

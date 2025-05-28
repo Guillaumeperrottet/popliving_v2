@@ -180,38 +180,33 @@
     "availability_button": "Demande de disponibilité",
     "hero": {
       "title": "Nos espaces de stockage à louer",
-      "description": "Location d'espace de stockage. Que vous souhaitiez simplement gagner un peu de place dans votre cave ou bien entreposer un appartement entier, nous trouverons à coup sûr la solution optimale."
+      "description": "Location d'espaces de stockage. Que vous souhaitiez simplement gagner un peu de place dans votre cave ou entreposer du matériel, nous trouverons à coup sûr la solution optimale."
     },
     "volume": "Volume",
     "surface": "Surface",
     "reference": "Valeur de référence",
-    "space_for": "Espace pour",
+    "space_for": "Exemple d'espace pour",
     "options": {
       "xs": {
-        "volume": "5-7m³",
-        "surface": "1.9-2.6m²",
+        "volume": "4.4-8.8m³",
+        "surface": "2-4m²",
         "reference": "Petit mobilier",
         "space_for": "20 cartons, 1 table à manger, 2 chaises"
       },
       "m": {
-        "volume": "11-16m³",
-        "surface": "4-6m²",
+        "volume": "13.2-17.6m³",
+        "surface": "6-8m²",
         "reference": "2 pièces",
         "space_for": "30 cartons, canapé, fauteuil, TV, armoire, lit, 4 chaises, table"
       },
       "xl": {
-        "volume": "27-39m³",
-        "surface": "10-14.5m²",
+        "volume": "22-26.4m³",
+        "surface": "10-12m²",
         "reference": "4 pièces",
         "space_for": "80 cartons, canapé, fauteuil, TV, 2 placards, lit, 6 chaises, table, 2 chambres d'enfants, bureau, cave"
       }
     },
 
-    "calculator": {
-      "title": "Calculateur de volume",
-      "description": "Utilisez notre calculateur de volume pour estimer précisément vos besoins en stockage",
-      "link_text": "Accéder au calculateur de volume"
-    },
     "cta": {
       "title": "Besoin d'un espace de stockage?",
       "description": "Contactez-nous dès maintenant pour réserver votre espace de stockage ou pour obtenir plus d'informations.",

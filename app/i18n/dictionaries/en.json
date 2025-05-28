@@ -180,37 +180,33 @@
     "availability_button": "Availability Request",
     "hero": {
       "title": "Our Storage Spaces for Rent",
-      "description": "Storage space rental. Whether you simply want to free up some space in your basement or store an entire apartment's worth of furniture, we'll definitely find the optimal solution for you."
+      "description": "Storage space rental. Whether you simply want to gain some space in your basement or store equipment, we will surely find the optimal solution."
     },
     "volume": "Volume",
     "surface": "Surface Area",
     "reference": "Reference Value",
-    "space_for": "Space for",
+    "space_for": "Example of space for",
     "options": {
       "xs": {
-        "volume": "5-7m³",
-        "surface": "1.9-2.6m²",
+        "volume": "4.4-8.8m³",
+        "surface": "2-4m²",
         "reference": "Small furniture",
         "space_for": "20 boxes, 1 dining table, 2 chairs"
       },
       "m": {
-        "volume": "11-16m³",
-        "surface": "4-6m²",
+        "volume": "13.2-17.6m³",
+        "surface": "6-8m²",
         "reference": "2 rooms",
         "space_for": "30 boxes, sofa, armchair, TV, wardrobe, bed, 4 chairs, table"
       },
       "xl": {
-        "volume": "27-39m³",
-        "surface": "10-14.5m²",
+        "volume": "22-26.4m³",
+        "surface": "10-12m²",
         "reference": "4 rooms",
         "space_for": "80 boxes, sofa, armchair, TV, 2 wardrobes, bed, 6 chairs, table, 2 children's rooms, office, cellar"
       }
     },
-    "calculator": {
-      "title": "Volume Calculator",
-      "description": "Use our volume calculator to accurately estimate your storage needs",
-      "link_text": "Access the volume calculator"
-    },
+
     "cta": {
       "title": "Need a Storage Space?",
       "description": "Contact us now to reserve your storage space or get more information.",

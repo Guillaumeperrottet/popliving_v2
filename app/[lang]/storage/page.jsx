@@ -13,12 +13,12 @@ export default function Storage() {
   const storageOptions = [
     {
       id: 1,
-      size: "XS",
+      size: "S",
       volumeKey: "storage.options.xs.volume",
       surfaceKey: "storage.options.xs.surface",
       referenceKey: "storage.options.xs.reference",
       spaceForKey: "storage.options.xs.space_for",
-      image: "/images/storage/s-storage.png", // À remplacer par votre image réelle
+      image: "/images/storage/s-storage.png",
     },
     {
       id: 2,
@@ -27,16 +27,16 @@ export default function Storage() {
       surfaceKey: "storage.options.m.surface",
       referenceKey: "storage.options.m.reference",
       spaceForKey: "storage.options.m.space_for",
-      image: "/images/storage/m-storage.png", // À remplacer par votre image réelle
+      image: "/images/storage/m-storage.png",
     },
     {
       id: 3,
-      size: "XL",
+      size: "L",
       volumeKey: "storage.options.xl.volume",
       surfaceKey: "storage.options.xl.surface",
       referenceKey: "storage.options.xl.reference",
       spaceForKey: "storage.options.xl.space_for",
-      image: "/images/storage/l-storage.png", // À remplacer par votre image réelle
+      image: "/images/storage/l-storage.png",
     },
   ];
 

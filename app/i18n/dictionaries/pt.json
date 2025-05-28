@@ -180,37 +180,33 @@
     "availability_button": "Pedido de disponibilidade",
     "hero": {
       "title": "Nossos espaços de armazenamento para alugar",
-      "description": "Aluguel de espaço de armazenamento. Seja você simplesmente queira ganhar um pouco de espaço em sua adega ou armazenar um apartamento inteiro, certamente encontraremos a solução ideal."
+      "description": "Aluguel de espaços de armazenamento. Seja para simplesmente ganhar um pouco de espaço na sua cave ou armazenar material, certamente encontraremos a solução ideal."
     },
     "volume": "Volume",
     "surface": "Superfície",
     "reference": "Valor de referência",
-    "space_for": "Espaço para",
+    "space_for": "Exemplo de espaço para",
     "options": {
       "xs": {
-        "volume": "5-7m³",
-        "surface": "1,9-2,6m²",
+        "volume": "4.4-8.8m³",
+        "surface": "2-4m²",
         "reference": "Móveis pequenos",
         "space_for": "20 caixas, 1 mesa de jantar, 2 cadeiras"
       },
       "m": {
-        "volume": "11-16m³",
-        "surface": "4-6m²",
+        "volume": "13.2-17.6m³",
+        "surface": "6-8m²",
         "reference": "2 cômodos",
         "space_for": "30 caixas, sofá, poltrona, TV, armário, cama, 4 cadeiras, mesa"
       },
       "xl": {
-        "volume": "27-39m³",
-        "surface": "10-14,5m²",
+        "volume": "22-26.4m³",
+        "surface": "10-12m²",
         "reference": "4 cômodos",
         "space_for": "80 caixas, sofá, poltrona, TV, 2 armários, cama, 6 cadeiras, mesa, 2 quartos de crianças, escritório, porão"
       }
     },
-    "calculator": {
-      "title": "Calculadora de volume",
-      "description": "Use nossa calculadora de volume para estimar com precisão suas necessidades de armazenamento",
-      "link_text": "Acessar a calculadora de volume"
-    },
+
     "cta": {
       "title": "Precisa de um espaço de armazenamento?",
       "description": "Entre em contato conosco agora para reservar seu espaço de armazenamento ou obter mais informações.",

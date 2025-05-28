@@ -180,37 +180,33 @@
     "availability_button": "Verfügbarkeitsanfrage",
     "hero": {
       "title": "Unsere Lagerräume zu vermieten",
-      "description": "Vermietung von Lagerräumen. Ob Sie einfach nur etwas mehr Platz in Ihrem Keller gewinnen oder eine ganze Wohnung einlagern möchten, wir finden mit Sicherheit die optimale Lösung."
+      "description": "Vermietung von Lagerräumen. Ob Sie einfach etwas Platz in Ihrem Keller gewinnen oder Material lagern möchten, wir finden mit Sicherheit die optimale Lösung."
     },
     "volume": "Volumen",
     "surface": "Fläche",
     "reference": "Referenzwert",
-    "space_for": "Platz für",
+    "space_for": "Beispiel für Platz für",
     "options": {
       "xs": {
-        "volume": "5-7m³",
-        "surface": "1,9-2,6m²",
+        "volume": "4.4-8.8m³",
+        "surface": "2-4m²",
         "reference": "Kleine Möbel",
         "space_for": "20 Kartons, 1 Esstisch, 2 Stühle"
       },
       "m": {
-        "volume": "11-16m³",
-        "surface": "4-6m²",
+        "volume": "13.2-17.6m³",
+        "surface": "6-8m²",
         "reference": "2 Zimmer",
         "space_for": "30 Kartons, Sofa, Sessel, TV, Schrank, Bett, 4 Stühle, Tisch"
       },
       "xl": {
-        "volume": "27-39m³",
-        "surface": "10-14,5m²",
+        "volume": "22-26.4m³",
+        "surface": "10-12m²",
         "reference": "4 Zimmer",
         "space_for": "80 Kartons, Sofa, Sessel, TV, 2 Schränke, Bett, 6 Stühle, Tisch, 2 Kinderzimmer, Büro, Keller"
       }
     },
-    "calculator": {
-      "title": "Volumenrechner",
-      "description": "Nutzen Sie unseren Volumenrechner, um Ihren Lagerplatzbedarf genau zu schätzen",
-      "link_text": "Zum Volumenrechner"
-    },
+
     "cta": {
       "title": "Benötigen Sie einen Lagerraum?",
       "description": "Kontaktieren Sie uns jetzt, um Ihren Lagerraum zu reservieren oder weitere Informationen zu erhalten.",
