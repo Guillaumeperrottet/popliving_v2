@@ -53,7 +53,6 @@ export default function Storage() {
             {t("storage.hero.description")}
           </p>
         </section>
-
         {/* Storage Options Section - Format basé sur votre croquis */}
         <section className="container mx-auto px-8 py-16">
           <div className="space-y-20">
@@ -120,23 +119,13 @@ export default function Storage() {
           </div>
         </section>
 
-        {/* CTA Section
         <section className="bg-white py-16 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
               {t("storage.cta.title")}
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              {t("storage.cta.description")}
-            </p>
-            <Link href={`/${lang}/booking`}>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-8 rounded-lg font-medium transition-colors duration-300">
-                {t("storage.cta.button")}
-              </button>
-            </Link>
           </div>
-        </section> */}
-
+        </section>
         {/* FAQ Section */}
         <section className="container mx-auto px-8 py-16">
           <h2 className="text-3xl font-bold mb-8 text-center">

@@ -17,7 +17,7 @@ export default function Booking() {
     phone: "",
     arrivalDate: "",
     chooseRoom: "chambre simple",
-    chooseStorage: "xs", // Valeur par défaut pour le scroll direct
+    chooseStorage: "s", // Valeur par défaut pour le scroll direct
     bookingType: "room",
     stayDuration: "1 semaine",
     adresse: "",
@@ -36,7 +36,7 @@ export default function Booking() {
       ...formData,
       bookingType: type,
       chooseRoom: type === "room" ? "chambre simple" : "",
-      chooseStorage: type === "storage" ? "xs" : "",
+      chooseStorage: type === "storage" ? "s" : "",
     });
   };
 
@@ -67,7 +67,7 @@ export default function Booking() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const hash = window.location.hash;
-      if (hash === "#form-xs" || hash === "#form-m" || hash === "#form-xl") {
+      if (hash === "#form-s" || hash === "#form-m" || hash === "#form-xl") {
         setFormData((prev) => ({
           ...prev,
           bookingType: "storage",
@@ -161,9 +161,9 @@ export default function Booking() {
                 onChange={handleChange}
                 className="border border-gray-300 p-3 rounded w-full"
               >
-                <option value="xs">{t("booking.storage_types.xs")}</option>
+                <option value="s">{t("booking.storage_types.s")}</option>
                 <option value="m">{t("booking.storage_types.m")}</option>
-                <option value="xl">{t("booking.storage_types.xl")}</option>
+                <option value="l">{t("booking.storage_types.l")}</option>
               </select>
             </>
           )}

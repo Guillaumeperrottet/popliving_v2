@@ -69,9 +69,9 @@
     "storage_option": "Book Storage",
     "choose_storage": "Choose a Storage Space",
     "storage_types": {
-      "xs": "XS - Small Space (5-7m³)",
+      "s": "S - Small Space (4.4-8.8m³)",
       "m": "M - Medium Space (11-16m³)",
-      "xl": "XL - Large Space (27-39m³)"
+      "l": "L - Large Space (22-26.4m³)"
     }
   },
   "navbar": {
@@ -208,7 +208,7 @@
     },
 
     "cta": {
-      "title": "Need a Storage Space?",
+      "title": "Other solutions on request",
       "description": "Contact us now to reserve your storage space or get more information.",
       "button": "Make a Request"
     },

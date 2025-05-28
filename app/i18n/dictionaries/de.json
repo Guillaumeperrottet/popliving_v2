@@ -69,9 +69,9 @@
     "storage_option": "Lagerraum buchen",
     "choose_storage": "Wählen Sie einen Lagerraum",
     "storage_types": {
-      "xs": "XS - Kleiner Raum (5-7m³)",
+      "s": "S - Kleiner Raum (4.4-8.8m³)",
       "m": "M - Mittlerer Raum (11-16m³)",
-      "xl": "XL - Großer Raum (27-39m³)"
+      "l": "L - Großer Raum (22-26.m³)"
     }
   },
   "navbar": {
@@ -208,7 +208,7 @@
     },
 
     "cta": {
-      "title": "Benötigen Sie einen Lagerraum?",
+      "title": "Weitere Lösungen auf Anfrage",
       "description": "Kontaktieren Sie uns jetzt, um Ihren Lagerraum zu reservieren oder weitere Informationen zu erhalten.",
       "button": "Anfrage stellen"
     },

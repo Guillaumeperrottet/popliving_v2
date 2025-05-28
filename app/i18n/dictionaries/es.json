@@ -69,9 +69,9 @@
     "storage_option": "Reservar almacenamiento",
     "choose_storage": "Elija un espacio de almacenamiento",
     "storage_types": {
-      "xs": "XS - Espacio pequeño (5-7m³)",
+      "s": "S - Espacio pequeño (4.4-8.8m³)",
       "m": "M - Espacio mediano (11-16m³)",
-      "xl": "XL - Espacio grande (27-39m³)"
+      "l": "L - Espacio grande (22-26.4m³)"
     }
   },
   "navbar": {
@@ -208,7 +208,7 @@
     },
 
     "cta": {
-      "title": "¿Necesita un espacio de almacenamiento?",
+      "title": "Otras soluciones bajo petición",
       "description": "Contáctenos ahora para reservar su espacio de almacenamiento u obtener más información.",
       "button": "Hacer una solicitud"
     },
